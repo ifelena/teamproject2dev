@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Skprose/teamproject2dev/issues"
   },
-  "homepage": "https://github.com/Skprose/teamproject2dev#readme"
+  "homepage": "https://github.com/Skprose/teamproject2dev#readme",
+  "dependencies": {
+    "semantic-ui": "^2.2.13"
+  }
 }

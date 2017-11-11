@@ -1,0 +1,68 @@
+
+body {
+      margin: 30px;
+      background-color: whitesmoke;
+      overflow-y: hidden;
+      overflow-x: show;
+    }
+
+    .ui_padded_grid {
+
+    	margin-top: 350px;
+    	height: 480px;
+		overflow: scroll; 
+    	width: 1000px;
+    	background-color: green;
+    	margin-left: 20px;
+    }
+
+    .twelve_wide_column {
+    	width: 600px;
+    	scroll-behavior: horizontal;
+    }
+
+    #album {
+    	padding-top: 20px
+    	padding-left: 20px;
+    	border-left: 20px;
+    }
+
+
+    .scrolling-wrapper {
+  		-webkit-overflow-scrolling: touch;
+
+  }
+
+
+  	.card {
+    	display: inline-block;
+    	margin-top: 50px;
+  	}
+}
+
+	
+	
+
+    .ui.cards >.card  {
+      width: 210px;
+    }
+
+    .ui.cards > .card > .content > .header:not(.ui) {
+      font-size: 1.1em;
+      font-weight: normal;
+    }
+
+    .ui.cards > .card .meta,
+    .ui.card .meta {
+      font-size: 0.8em;
+    }
+
+
+
+    #album_items {
+      display: none;
+    }
+
+    #album_items .ui.cards {
+      margin: 10px;
+    }

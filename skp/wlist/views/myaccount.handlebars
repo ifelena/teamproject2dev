@@ -47,6 +47,41 @@
               </div>
 </div>
 
+<!-- Start code for Cards !-->
+
+$('submitButton').on('click', function() {
+  //Get
+  var name = $('#product_name').val(); // MUST ENTER INPUT ID
+   //Get
+  var desc = $('#product_desc').val(); // MUST ENTER INPUT ID
+   //Get
+  var price = $('#product_price').val(); // MUST ENTER INPUT ID
+
+var myCard = $('<div>');
+var imageURL = 'image.png';
+var cardTemplate = '        <div class="image"> '+
+            '<img src="' + imageURL + '">'+
+        '</div>'+
+        '<div class="content">'+
+          '<div class="header">'+
+          'Item: ' + name + '<br>'+
+          'Description: ' + desc + '<br>'+
+          'Price: ' + price + '<br>'+
+        '</div>'+
+        '<div class="ui bottom attached basic buttons">'+
+          '<button class="ui button"><i class="pencil icon"></i></button>'+
+          '<button class="ui button"><i class="trash icon"></i></button>'+
+        '</div>';
+
+myCard.append(cardTemplate);
+myCard.attr('class', 'card');
+$('.ui_card').append(myCard);
+
+
+});
+
+<!-- End code for Cards !-->
+
 <div class = "container">
       <button><a href = "">Return to Home Page</button>
 </div>
